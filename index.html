@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 2rem 3.5rem;
+        }
+
+        .container .card {
+            text-align: center;
+            /* padding: 1rem 3rem 3rem 3rem; */
+            width: calc(33% - 40px);
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform .5s;
+        }
+
+        .container .card:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .card .harga {
+            font-size: 20px;
+            color: red;
+        }
+
+        .card .rincian {
+            font-size: 20px;
+        }
+
+        .card .button input {
+            height: 50px;
+            width: 170px;
+            background-color: red;
+            font-size: 20px;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        .card .button input:hover {
+            background-color: rgb(164, 24, 24);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #card1 {
+            float: left;
+        }
+
+        #card2 {
+            float: left;
+            border: 3px solid red;
+        }
+        #card3 {
+            float: left;
+        }
+
+        @media screen and (max-width:861px){
+            .container {
+                margin-right: 5rem;
+            }
+            .container .card {
+                width: 100%;
+                padding: 1rem;
+                margin-left: -10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- card 1 -->
+        <div class="card" id="card1">
+            <div class="title">
+                <h1>Basic</h1>
+            </div>
+            <div class="harga">
+                <h1>$ 19 /month</h1>
+            </div>
+            <div class="rincian">
+                <p>Feature 1</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+            </div>
+            <div class="button">
+                <input type="submit" value="Choose Plan" name="button">
+            </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card" id="card2">
+            <div class="title">
+                <h1>Pro</h1>
+            </div>
+            <div class="harga">
+                <h1>$ 29 /month</h1>
+            </div>
+            <div class="rincian">
+                <p>Feature 1</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+            </div>
+            <div class="button">
+                <input type="submit" value="Choose Plan" name="button">
+            </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card" id="card3">
+            <div class="title">
+                <h1>Premium</h1>
+            </div>
+            <div class="harga">
+                <h1>$ 39 /month</h1>
+            </div>
+            <div class="rincian">
+                <p>Feature 1</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+                <p>Feature 5</p>
+            </div>
+            <div class="button">
+                <input type="submit" value="Choose Plan" name="button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
